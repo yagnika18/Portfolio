@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+ <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Playfair+Display:ital@1&family=Roboto:wght@400;700&display=swap');
+body{
+    margin:0;
+    background-color:black;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:hwb(11.63deg 46.99% 11.65%);
+    width: 100%;
+}
+.navbar-left{
+    padding-left: 80px;
+    
+}
+.navbar-left img{
+    height: 110px;
+    width:80px;
+}
+.navbar-right{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+
+}
+.element{
+    padding: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 20px ;
+    font-weight: bold;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    
+
+
+}
+ .home-left{ 
+    width: 65vw;
+    color: aliceblue;
+    font-family: Arial ;
+    text-align: center;
+    padding-left: 20px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color:hwb(11.63deg 46.99% 11.65%);
+
+
+}
+.home-right{
+    width: 35vw;
+    align-items: right;
+    padding-left:100px;
+    border-style: dashed;
+   
+}
+.home-h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  
+}
+.home-p{
+  font-family: 'Encode Sans', sans-serif;
+    font-size: 20px;
+   
+}
+.home-right img{
+    height: 60%;
+    width:65%;
+    
+}
+.services{
+    color: whitesmoke;
+    padding: 50px;
+    text-align: center;
+
+
+}
+.serh1{
+    font-family: ubuntu;
+    color: rgb(127, 255, 0);
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-style: italic;
+
+}
+.services-sub-cont{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.services-card{
+    border: 2px solid hwb(11.63deg 46.99% 11.65%);
+    margin: 20px;
+    padding: 20px;
+    width:400px;
+    
+}
+.sc-h1{
+    font-family:'Montserrat', sans-serif;
+    font-size: 25px;
+    color: rgb(50, 215, 215);
+}
+.sc-p{
+    font-family:  'Encode Sans', sans-serif;
+    font-size: 20px;
+}
+.contact{
+    text-align: center;
+}
+.contact-info{
+    font-family:'Montserrat', sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+}
+.social-icons img{
+    height: 50px;
+    padding:20px;
+   
+
+
+}
+.services-card img{
+    height:50px;
+}
+h3{
+    color: white;
+}
+
+    </style> 
+    
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+           <img src="https://t4.ftcdn.net/jpg/04/06/92/17/360_F_406921774_w48dWkIrsixpA2tcqJCB1Z3ULWxw0uLm.jpg" alt="my profile"/>
+        </div>
+        <div class="navbar-right">
+            <a class="element" href="#home">Home</a>
+            <a class="element" href="#About">About</a>
+            <a class="element" href="#services">Services</a>
+            <a class="element" href="#contact">Contact</a>
+        </div>
+    </div>
+        <div class="home" id="home">
+            <div class="home-left">
+                <h1 class="home-h1"> Sivapuram Yagnika</h1>
+                <p class="home-p">I'm Sivapuram Yagnika currently pursuing  B.Tech at Mohan Babu University in Tirupathi and has a keen interest in full-stack web development. This dynamic field encompasses both front-end and back-end technologies, allowing me to create interactive and functional websites. With the foundation of my ongoing education, l'm poised to delve into the diverse realms of programming languages, frameworks, and database management systems. My academic pursuits, coupled with a passion for full-stack development, position me to navigate the ever-evolving landscape of web technologies and contribute to innovative digital solutions in the future. </p>
+            </div>
+                <div class="home-right">
+                    <img src="data:image/png;base64,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"alt="my logo"/>  
+
+                
+            </div>
+        </div>
+        
+        <div class="services"  id="services">
+            <hi class="serh1">SERVICES WE OFFER</hi>
+            <div class="services-sub-cont">
+                <div class="services-card">
+                <h1 class="sc-h1">Web designing</h1>
+                <p class="sc-p">1)Frontend Development
+                    2)Backend Development
+                    3)Tools & Technologies
+                    I am passionate about creating web solutions that make an impact. If you have a project or idea that needs a skilled developer, let's connect and turn your vision into reality. Thank you for visiting, and I look forward to the opportunity to work together.
+
+                </p>
+            </div>
+            <div class="services-card">
+                <h1 class="sc-h1">Photo Shop</h1>
+                <p class="sc-p">My interest in photography is a captivating form of visual expression.My passion for photo shoots not only enables personal creativity but also offers opportunities to share perspectives and connect with others through the lens.Thank you for visiting, and I look forward to the opportunity to work together.
+
+                </p>
+                
+            </div>
+            <div class="services-card">
+                <h1 class="sc-h1">Video Editing</h1>
+                <p class="sc-p">I believe in the power of visual storytelling, and I bring a unique blend of creativity and technical expertise to every project. Throughout my career, I've had the privilege of working on diverse projects, ranging from corporate videos to cinematic short films. I look forward to the opportunity to work together and turn your ideas into reality.</p>
+            
+            </div>
+            </div>
+            
+
+        
+
+           
+        </div>
+        <div class="services">
+            <hi class="serh1">TESTIMONIALS</hi>
+            <div class="services-sub-cont">
+                <div class="services-card">
+                <h1 class="sc-h1">Google</h1>
+                <img src="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" class="test-logo"/>
+                
+            </div>
+            <div class="services-card">
+                <h1 class="sc-h1">Facebook</h1>
+                <img src="data:image/png;base64,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" class="test-logo"/>
+                
+                
+            </div>
+            <div class="services-card">
+                <h1 class="sc-h1">instagram</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Z1nn-1E-mQYrUtEk1peuckUTKTnrat3UQ&usqp=CAU" class="test-logo"/>
+
+                
+            
+            </div>
+            </div>
+            
+
+        
+
+           
+        </div>
+        <div class="contact" id="contact">
+            <h1 class="serh1">CONTACT US</h1>
+            <div class="contact-info">
+                <p>S.Yagnika</p>
+                <p>+91 7023485412</p>
+                <p>yagnikasivapuram@gmail.com</p>   
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/.y.a.g.n.i.k.a.?igsh=MXA0Y2p6aGtiejB5ZA">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Z1nn-1E-mQYrUtEk1peuckUTKTnrat3UQ&usqp=CAU" class="icon"/>
+                </a>
+                <a href="https://youtube.com/@user-hc4hy5hy3c?si=cUdig1yEMksMoazA">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj1g39T1ex027T9zpeMUAjqCz69qDmXnMFqQ&usqp=CAU" class="icon"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yagnika-sivapuram-065b44284">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAe7X///8AcbDi6/MAd7N9rM4Ac7G70eStyN/I2ukAebQAdbI5j79Unsjo8vjM4u7Y6fIfiLy00uWew9sHfrZvqs52qc3T5O+ly+FvpMpopcuMudcUg7qny+Hg7/ZDlMKAtNTw9/u92eljoMiTuNWBttWUwNukw9s5k8K61+jZwmoZAAAEoUlEQVR4nO2dbVvbIBSGgTJUSGjStNtsrX1x69b//weXtNMaDVR30YOePfcXP5RcF7e8JhxAyEeqpqynggV12VRPXuLv30mhnM6ds2Rop4pJz9CXxubOVWKsKf3JcCz4FN8JLcaPhmPFrQCPWDU+GnrBU7BVFP5gWHKsokd02RlOTO58XBA1aQ0LrnW0wxZSVCp3Li6KqkTjcmfiorhGMO5nOnQp6tx5uDC1YDLZBgAAAAAAAAAAAAAAAADAf43VRrUYx3SJ1Ro9b8YjX00WhWK4BmnN3fIprkrez/gFHLmd7FGteMU72GO0UY81p3gAa6tXgqwUrXtdgh1zNhEBZjEoKDd3XLqb6bCgZBNdZb6HDCWPQrR2EzRsWBSifggKSs+iO3051verae7cpUBtI4Ylh4aoRhHDrxyGxKjhFw6G5lvEkMW0xiwjhizijd06Yqg5GNoiLLhlMeILNfTqxKgZtpOaeUiQx5RGRAqRSRG2hRhoiXserbDDDdbTikM/+oiZDQhOORkKU25eVlFuG+DctPem7+d82uATRuzuj3qb7Vxx6UX7OHW3ur19KDRTvwNaa2uZNUAAwEfgsLQdoN+pukjKF6vG1radlnPmiOs6MEKlPub6JszDc0X3I5JycVK01hlRr+Y/d8ur9perSbOYlYU1uc7pePu3NnMVSXn9OAlqTcrd2L9K4G8WqzzxAWkNtSqWm2Aiv5tmCBBIaWhNMbzYemJfk894Uxrq5oxfR0N98EpCQ32uAI/4grY5JjO0JvzR7gUz0pqazNBMIj+/YEGpmMpQlW8XlPInoWIywzfX0QMlXVtMZbh6l6CUNdnAmMjw1zta4YExWZBnKsPNOw3lmqqeJjKMRQMMs6F63Uhk+A/siPrTfIYbovXXfIZyTTNBzWhY0VTTjIZyRVKIOQ1p+pqchhXJkJjTkGbqltVwRtEQsxpOKKppVkOS8SKrIUlYWV7D3wQNMa8hxStUckO/XTZNs9zfvyXxkqAhpjWs1nW3R7NbdVJ3X89/P90ShM6lNPRz87zrcKo8V5AUwYEJDV8flK71uc83n6qWDh6UrmJB1pJkR0cyQz8YCGfPfEcliCRPZjgb7vhjUdaSZM9KKsP7UIsy0c9wBHtWUhkuQmO3ji5oEAz5qQzDr3rTzb/8Yz6c4SY8sKnYrpzdpzEchwe2yCZVKb9/GsPInmEX2El97rkPZngdMfwSeY5gQ8DlDXXMkGDqndlwzN7wG/taSnDhSGbDEQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMKwj7kZBfG3z7druV/hlKMf4V129taHn7sh2CYbO0e4vx8tdo5wbBuhjTzH8Px+AAAAAAAAAAAAAAAAAAAAAAAA4ESdOwMXphYl46vfRXcqsWiy3LlLhmsEwVGLOVGVoDjlPB+2kILiZN58mH1rKBn3Nd3p562hF1zrqRX+YDh8DQMDrOouPekMB67S4IAWh1tdDobSl+yK0ZrSy5OhlJNCOT4FqZ0q9n/NxFP0bdWUXOaoddmcbjr5A5XhWJeQSJXvAAAAAElFTkSuQmCC" class="icon"/>
+                          </a>
+                          <h3>&copy; 2004-2024</h3>
+
+        </div>
+         
+
+    
+</body>
+
+</html>
